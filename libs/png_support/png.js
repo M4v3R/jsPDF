@@ -447,4 +447,4 @@
 
   global.PNG = PNG;
 
-})(typeof window !== "undefined" && window || this);
+})(typeof window !== "undefined" && window || typeof global !== "undefined" && global || Function("return this")());
