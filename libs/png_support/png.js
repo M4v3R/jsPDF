@@ -28,27 +28,6 @@
   PNG = (function() {
     var APNG_BLEND_OP_OVER, APNG_BLEND_OP_SOURCE, APNG_DISPOSE_OP_BACKGROUND, APNG_DISPOSE_OP_NONE, APNG_DISPOSE_OP_PREVIOUS, makeImage, scratchCanvas, scratchCtx;
 
-    PNG.load = function(url, canvas, callback) {
-      var xhr,
-        _this = this;
-      if (typeof canvas === 'function') {
-        callback = canvas;
-      }
-      xhr = new XMLHttpRequest;
-      xhr.open("GET", url, true);
-      xhr.responseType = "arraybuffer";
-      xhr.onload = function() {
-        var data, png;
-        data = new Uint8Array(xhr.response || xhr.mozResponseArrayBuffer);
-        png = new PNG(data);
-        if (typeof (canvas != null ? canvas.getContext : void 0) === 'function') {
-          png.render(canvas);
-        }
-        return typeof callback === "function" ? callback(png) : void 0;
-      };
-      return xhr.send(null);
-    };
-
     APNG_DISPOSE_OP_NONE = 0;
 
     APNG_DISPOSE_OP_BACKGROUND = 1;
