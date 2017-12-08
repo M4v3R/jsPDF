@@ -118,11 +118,13 @@
             frame.data = [];
             break;
           case 'IDAT':
-          case 'fdAT':
-            if (section === 'fdAT') {
-              this.pos += 4;
-              chunkSize -= 4;
+            for (i = _i = 0; _i < chunkSize; i = _i += 1) {
+              this.imgData.push(this.data[this.pos++]);
             }
+            break;
+          case 'fdAT':
+            this.pos += 4;
+            chunkSize -= 4;
             data = (frame != null ? frame.data : void 0) || this.imgData;
             for (i = _i = 0; 0 <= chunkSize ? _i < chunkSize : _i > chunkSize; i = 0 <= chunkSize ? ++_i : --_i) {
               data.push(this.data[this.pos++]);
