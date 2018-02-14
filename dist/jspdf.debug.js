@@ -129,8 +129,8 @@ var asyncGenerator = function () {
 
 /** @preserve
  * jsPDF - PDF Document creation from JavaScript
- * Version 1.3.6 Built on 2018-02-14T16:53:08.990Z
- *                           CommitID c833d6cb5f
+ * Version 1.3.6 Built on 2018-02-14T17:17:19.586Z
+ *                           CommitID c6ef02afc1
  *
  * Copyright (c) 2010-2016 James Hall <james@parall.ax>, https://github.com/MrRio/jsPDF
  *               2010 Aaron Spike, https://github.com/acspike
@@ -10455,11 +10455,11 @@ Copyright (c) 2012 Willow Systems Corporation, willow-systems.com
 
 /* Blob.js
  * A Blob implementation.
- * 2018-01-12
+ * 2014-07-24
  *
  * By Eli Grey, http://eligrey.com
  * By Devin Samarin, https://github.com/dsamarin
- * License: MIT
+ * License: X11/MIT
  *   See https://github.com/eligrey/Blob.js/blob/master/LICENSE.md
  */
 
