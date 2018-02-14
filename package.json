@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "adler32cs": "git://github.com/dusanstanojeviccs/adler32cs.js",
-    "cf-blob.js": "0.0.1",
+    "cf-blob.js": "github:M4v3R/cf-blob.js",
     "file-saver": "1.3.3"
   },
   "devDependencies": {
