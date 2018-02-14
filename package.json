@@ -1,6 +1,6 @@
 {
   "name": "jspdf",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "homepage": "https://github.com/mrrio/jspdf",
   "description": "PDF Document creation from JavaScript",
   "main": "dist/jspdf.min.js",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrRio/jsPDF.git"
+    "url": "https://github.com/M4v3R/jsPDF.git"
   },
   "dependencies": {
     "adler32cs": "git://github.com/dusanstanojeviccs/adler32cs.js",
